@@ -1,5 +1,6 @@
 streamlit
-tensorflow
+tensorflow==2.16.1
+huggingface_hub
 opencv-python-headless
 pillow
 pandas
