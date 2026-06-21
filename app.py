@@ -483,7 +483,7 @@ if menu_selection == "Home Page":
                 st.session_state[state_key] = True
                 st.toast(f"💾 Record saved for {patient_name} ({patient_site})!", icon="✅")
                 
-            st.markdown("<h3 class='section-title'>📊 1. Class of Diagnosis and Confidence Decision</h3>", unsafe_allow_html=True)
+            st.markdown("<h3 class='section-title'>📊 1.Class of Diagnosis and Confidence Decision</h3>", unsafe_allow_html=True)
             st.markdown(
                 f"""<div class='verdict-box' style='border-left-color: {color};'>
                     <span style='font-size: 1.1rem; color: #a0aec0; font-weight: 500;'>Patient: <b>{patient_name}</b> ({patient_id}) | Age: {patient_age} | Gender: {patient_gender} | Target Site: <b>{patient_site}</b></span><br>
