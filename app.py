@@ -483,7 +483,7 @@ if menu_selection == "Home Page":
                 st.session_state[state_key] = True
                 st.toast(f"💾 Record saved for {patient_name} ({patient_site})!", icon="✅")
                 
-            st.markdown("<h3 class='section-title'>📊 1. Diagnostic Class & Confidence Verdict</h3>", unsafe_allow_html=True)
+            st.markdown("<h3 class='section-title'>📊 1. Class of Diagnosis and Confidence Decision</h3>", unsafe_allow_html=True)
             st.markdown(
                 f"""<div class='verdict-box' style='border-left-color: {color};'>
                     <span style='font-size: 1.1rem; color: #a0aec0; font-weight: 500;'>Patient: <b>{patient_name}</b> ({patient_id}) | Age: {patient_age} | Gender: {patient_gender} | Target Site: <b>{patient_site}</b></span><br>
@@ -496,7 +496,7 @@ if menu_selection == "Home Page":
             prog_col1, prog_col2, prog_col3 = st.columns(3)
             for idx, (label, val) in enumerate(zip(CLASS_LABELS, probs)):
                 metric_html = f"""
-                <div style='background-color: #1b1e2e; padding: 12px; border-radius: 6px; margin-bottom: 2px; margin-top: 10px; border-left: 4px solid #ff6a00;'>
+                <div style='background-color: #ECB65F; padding: 12px; border-radius: 6px; margin-bottom: 2px; margin-top: 10px; border-left: 4px solid #ff6a00;'>
                     <div style='margin-bottom: 6px;'>
                         <span style='font-weight: 700; color: #ffffff; font-size: 1.1rem;'>{label}</span>
                         <span style='float: right; color: #a0aec0; font-size: 0.85rem; font-weight: 500;'>Score: {val*100:.2f}%</span>
